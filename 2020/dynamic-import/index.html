@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dynamic Import</title>
+  </head>
+  <body>
+    <a href="#module1">Module 1</a>
+    <a href="#module2">Module 2</a>
+    <script>
+      window.addEventListener('hashchange', async () => {
+        const route = window.location.hash.substr(1);
+        const { myFunction } = await import(`./${route}.mjs`);
+
+        myFunction();
+      });
+    </script>
+  </body>
+</html>
