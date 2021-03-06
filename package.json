@@ -1,0 +1,15 @@
+{
+  "name": "ecmascript-examples",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Nitay Neeman",
+  "description": "📃 Examples demonstrating the newest features attaching to the ECMAScript specification - as of the 11th edition, which also known as ES2020.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitayneeman/ecmascript-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nitayneeman/ecmascript-examples/issues"
+  },
+  "homepage": "https://github.com/nitayneeman/ecmascript-examples#readme"
+}
