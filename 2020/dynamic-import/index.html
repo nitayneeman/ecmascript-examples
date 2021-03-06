@@ -8,9 +8,11 @@
     <a href="#module2">Module 2</a>
     <script>
       window.addEventListener('hashchange', async () => {
+        // Extracts the new route
         const route = window.location.hash.substr(1);
-        const { myFunction } = await import(`./${route}.mjs`);
 
+        // Loads the module based on the route
+        const { myFunction } = await import(`./${route}.mjs`);
         myFunction();
       });
     </script>

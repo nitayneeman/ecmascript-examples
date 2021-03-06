@@ -1,3 +1,4 @@
-import('./module1.mjs')
-  .then((module) => module.myFunction())
-  .catch((error) => console.error(error));
+import('./module1.mjs').then((module) => {
+  // The exports are accessible through the module object
+  module.myFunction();
+});
